@@ -187,14 +187,14 @@
         width: 500,
         height: 30,
         center: true,
-        text: '2016 © Airing  仅供学习使用',
+        text: '2018 © Bilibili Users',
         css: {
           opacity: 0, textAlign: 'center', color: 'yellow', fontSize: '12px'
         },
         animateIn: { opacity: 1, bottom: 20 },
         animateOut: { opacity: 0, bottom: -50 },
         onclick: function () {
-          window.location.href = 'http://github.com/airingursb/bilibili-report'
+          window.location.href = 'https://github.com/CHENG-KUN/VideoSharingWebCrawler/tree/master/bilibili-report-master'
         }
       })
       .addPage().addComponent('bglogo', {
@@ -206,12 +206,12 @@
       delay: 1000
     })
       .addPage()
-      .addComponent('caption', { text: '哔哩哔哩' })
+      .addComponent('caption', { text: Bilibili })
       .addComponent('text', {
         width: 500,
         height: 30,
         center: true,
-        text: 'B站数据报告',
+        text: 'Bilibili User Information Report',
         css: {
           opacity: 0, textAlign: 'center', color: 'red', fontSize: '26px'
         },
@@ -232,7 +232,7 @@
           textAlign: 'justify',
           top: 240
         },
-        text: 'bilibili弹幕视频网现为国内最大的年轻人潮流文化娱乐社区，该网站于2009年6月26日创建，又称“B站”。B站是一个ACG动漫文化很浓厚的场所，与A站（AcFun）共同撑起了中国动漫的一片天。',
+        text: 'Bilibili is a video sharing website themed around anime, manga, and game fandom based in China, where users can submit, view, and add commentary subtitles on videos',
         animateIn: { opacity: 1, top: 190 },
         animateOut: { opacity: 0, top: 240 },
         delay: 1000
@@ -252,10 +252,10 @@
       })
 
       .addPage()
-      .addComponent('caption', { text: '年龄分布' })//polyline
+      .addComponent('caption', { text: 'Age Distribution' })//polyline
       .addComponent('polyline', {
         type: 'polyline',
-        data: [['70后', .010, '#ff7676'], ['80后', .057], ['90后', .762, 'blue'], ['00后', .183]],
+        data: [["70's", .010, '#ff7676'], ["80's", .057], ["90's ", .762, 'blue'], ["00's ", .183]],
         width: 530,
         height: 300,
         center: true,
